@@ -1,0 +1,11 @@
+#ssh to app-server-02
+
+ssh steve@stapp02
+
+#Create user siva with non-interactive shell
+
+sudo useradd -s /sbin/nologin siva
+
+#Verify the entry
+
+grep siva /etc/passwd
