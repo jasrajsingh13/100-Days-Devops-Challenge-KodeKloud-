@@ -1,0 +1,15 @@
+#SSH into App Server 1
+
+ssh tony@stapp01
+
+#Create the user with expiry date
+
+sudo useradd -e 2024-03-28 kirsty
+
+#Set password for kirsty
+
+sudo passwd kirsty
+
+#Verify user creation and Expiry details
+
+sudo chage -l kirsty
